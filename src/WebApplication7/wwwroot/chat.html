@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>简单的聊天室</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <style type="text/css">
+        .userListDiv {
+            float: right;
+        }
+    </style>
+
+    <ul id="messages"></ul>
+    <input type="text" id="messageBox" />
+    <input type="button" id="sendMessage" value="Send Message!" />
+    <div class="userListDiv">
+        <ul id="userList"> </ul>
+    </div>
+
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.0.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/signalr/jquery.signalr-2.2.1.min.js"></script>
+    <script src="signalr/hubs"></script>
+    <script src="chat.js"></script>
+</body>
+</html>
